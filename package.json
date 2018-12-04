@@ -4,11 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
+    "bcrypt": "^3.0.2",
+    "body-parser": "^1.18.3",
+    "ckeditor": "^4.11.1",
+    "express": "^4.16.4",
+    "express-flash-messages": "^0.1.1",
+    "express-hbs": "^1.0.4",
+    "express-session": "^1.15.6",
+    "handlebar": "^1.0.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.3.14",
+    "nodemon": "^1.18.7",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "passport-session": "^1.0.2"
   }
 }

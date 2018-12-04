@@ -1,0 +1,16 @@
+ <a href="/dashboard" class="btn btn-secondary" role="button">Go Back</a>
+ <div class="well well-lg">
+<h1>{{post.title}}</h1>
+<div>
+    {{post.body}}
+</div>
+<hr>
+<small>Written on {{post.created_date}}</small>
+<hr>
+<p>
+    <a href="/posts/{{post._id}}/edit" class="btn btn-primary" role="button">Edit</a>
+    <form action="/posts/{{post._id}}/delete?_method=DELETE" method="POST">
+        <button class="btn btn-danger" type="submit">Delete</button>
+    </form>
+</p>
+</div>

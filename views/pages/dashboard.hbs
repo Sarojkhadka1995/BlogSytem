@@ -1,0 +1,10 @@
+<h1>Blogs</h1>
+
+{{#each post}}
+<div class="well well-lg">
+    <h4><a href="/posts/{{this._id}}/view">{{this.title}}</a></h4>
+    <small>Written on {{this.created_date}}</small>
+</div>
+{{/each}}
+
+
