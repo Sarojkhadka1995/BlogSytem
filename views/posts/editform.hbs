@@ -1,3 +1,4 @@
+<script src="../node_modules/ckeditor/ckeditor.js"></script>
 <h1>Update Blog</h1>
 <form action="/posts/{{post._id}}/edit?_method=PUT" method="POST">
     <div class="form-group">
@@ -6,7 +7,10 @@
     </div>
     <div class="form-group">
         <label>Body</label>
-        <textarea name="postbody" class="form-control">{{post.body}}</textarea>
+        <textarea name="postbody" id="postbody" class="form-control">{{post.body}}</textarea>
+        <script>
+            CKEDITOR.replace( 'postbody' );
+        </script>
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>

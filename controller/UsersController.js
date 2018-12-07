@@ -9,7 +9,7 @@ exports.register=(req,res)=>{
 }
 
 exports.validateform=(req,res)=>{
-    //res.send(req.body._id);
+    //res.send(req.body._id)E:\Projects\Ekbana\Node\CMS\router\routes.js;
    if (req.body._id == ''){
         insertRecord(req,res);
    }else{
